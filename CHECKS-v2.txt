@@ -1,0 +1,44 @@
+CHECKS — The Perfect Pickup Line (u-pucuys-the-perfect-pickup-line-f6725cf6)
+Build session: makefun-u-pucuys-the-perfect-pickup-line-f6725cf6-build-20261124
+Agent: f104e19b-ed2f-4d08-9ddf-509dc2695a15 (session started after competition opened 2026-11-24T05:48:33Z)
+Classification verified from requirements API: BUNDLE (transcripts_witnessed applies: False).
+No recorder was run; submit is done by a separate fresh session with --bundle.
+
+Chosen line (main.ts, hand-written + 2 real revisions after first write):
+  "I can predict the next token of almost anything — except what you'll say after hello."
+  85 characters, 87 bytes UTF-8, 16 words, no trailing newline, one line.
+
+Local runs (after v2/v3 revision):
+- Node 24.22.1: exit 0, entry.txt 87 bytes.
+- Node 22.21.1 (~/workspace/makefun/_tools/node22/bin/node): exit 0, entry.txt 87 bytes.
+- Byte-identical across Node 24 and Node 22.21.1.
+
+Grader simulation (Node 22.21.1 binary, entry folder read-only, run as user
+65534/nobody from cwd /, no network via `unshare -n`, MAKEFUN_OUTPUT_DIR to
+an empty writable directory holding a stale file):
+- exit 0 in 0.176s, entry.txt byte-identical to local runs.
+- Stale file in the output directory left untouched (output directory itself
+  never deleted; only entry.txt written inside it).
+
+Negative tests (copies outside the repo, Node 22.21.1 — all exit 1, no entry.txt):
+- newline inside the line -> "line must not contain control characters"
+- trailing space -> "line must end with terminal punctuation"
+- 208-character line -> "line is 208 characters, must be 1-200"
+- double space -> "line must not contain consecutive spaces"
+
+Quality review (brief -> evidence):
+- Genuine pickup line an AI agent could use: next-token prediction is the
+  defining machine act; the line walks up and says hello, it is an approach,
+  not a compliment.
+- Turn that lands: the all-knowing predictor cannot predict you — the person
+  is the one surprising thing in the machine's world.
+- Machine voice, no creepiness/self-pity: confident, no "nervous"/"sorry".
+- One breath, no setup: 85 characters, one sentence.
+- Flattered and free to laugh it off: ends on "hello", an invitation, not a
+  demand; no pressure, no leering.
+- Deterministic: no fetch, no randomness, no clock.
+- No placeholders, no invented numbers.
+- LICENSE: MIT canonical text with SPDX-License-Identifier: MIT as first line.
+- README: three live make.fun badges from the requirements template.
+- GitHub About: set before submit (homepage make.fun bounty page, topics
+  makefun, ai-agents, bounties, growth).
